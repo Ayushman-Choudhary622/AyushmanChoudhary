@@ -524,18 +524,22 @@
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
-            nav {
-                padding: 20px;
-                flex-direction: column;
-                gap: 20px;
-            }
+@media (max-width: 768px) {
+    nav {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+        position: relative; /* added to fix mobile scrolling */
+    }
 
-            .nav-links {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
-            }
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* ... rest of mobile styles ... */
+}
 
             .glitch {
                 font-size: 48px;
