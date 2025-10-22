@@ -35,7 +35,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            z-index: -2;
             background: linear-gradient(45deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
         }
 
@@ -65,7 +65,7 @@
             left: 0;
             right: 0;
             width: 100%;
-            padding: 20px 50px;
+            padding: 15px 30px;
             background: rgba(10, 14, 39, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 2px solid var(--cyber-blue);
@@ -76,25 +76,30 @@
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             color: var(--cyber-pink);
             text-shadow: 0 0 10px var(--cyber-pink);
+            white-space: nowrap;
         }
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 20px;
             list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
         }
 
         .nav-links a {
             color: var(--cyber-blue);
             text-decoration: none;
-            padding: 8px 15px;
+            padding: 8px 12px;
             border: 1px solid transparent;
             transition: all 0.3s;
             position: relative;
+            font-size: 14px;
+            white-space: nowrap;
         }
 
         .nav-links a:hover {
@@ -252,9 +257,11 @@
             height: 200px;
             border-radius: 50%;
             border: 3px solid var(--cyber-pink);
-            margin-bottom: 20px;
+            margin: 0 auto 20px;
             box-shadow: 0 0 30px var(--cyber-pink);
             background: linear-gradient(135deg, var(--cyber-pink), var(--cyber-purple));
+            object-fit: cover;
+            display: block;
         }
 
         .info-item {
@@ -601,942 +608,8 @@
                 <p>I'm always eager to learn new concepts, participate in competitions, and contribute to research-oriented learning that pushes the boundaries of knowledge.</p>
             </div>
             <div class="profile-card">
-                <div class="profile-image"></div>
-                <div class="info-item">
-                    <span class="info-label">School:</span> Bhavan's Bhagwandas Purohit Vidya Mandir
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Class:</span> 9th Grade
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Location:</span> Ashti, Nagpur
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Specialization:</span> STEM & Olympiads
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">&lt;Skills/&gt;</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Programming</h3>
-                <ul class="skill-list">
-                    <li>Python</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Computational Thinking</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Academic Excellence</h3>
-                <ul class="skill-list">
-                    <li>Mathematics</li>
-                    <li>Science</li>
-                    <li>Sanskrit</li>
-                    <li>Hindi & English</li>
-                    <li>Social Studies</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Soft Skills</h3>
-                <ul class="skill-list">
-                    <li>Teamwork</li>
-                    <li>Leadership</li>
-                    <li>Communication</li>
-                    <li>Critical Thinking</li>
-                    <li>Problem Solving</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Special Abilities</h3>
-                <ul class="skill-list">
-                    <li>Logical Reasoning</li>
-                    <li>Research Skills</li>
-                    <li>Creative Design</li>
-                    <li>Quiz Competitions</li>
-                    <li>Olympiad Excellence</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-title">&lt;Achievements/&gt;</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Class 8 Excellence</h3>
-                <p>Achieved remarkable success across national and international Olympiads. Qualified NMTC Round 2, emerged as VVM Vidarbha Topper, and secured International Rank 3 in Sanskrit Olympiad.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">NMTC Qualifier</span>
-                    <span class="tech-tag">VVM Topper</span>
-                    <span class="tech-tag">Int. Rank 3</span>
-                </div>
-                <div class="project-links">
-                    <a href="#education">View Details</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>VNIT Competitions</h3>
-                <p>Won 1st Prize in VNIT Exquizit quiz competition, 2nd Prize in Crepido Bridge Design Challenge, and 3rd Prize in Wallstreet Finance, demonstrating interdisciplinary excellence.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Quiz Champion</span>
-                    <span class="tech-tag">Bridge Design</span>
-                    <span class="tech-tag">Finance</span>
-                </div>
-                <div class="project-links">
-                    <a href="#education">View Details</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>Olympiad Medalist</h3>
-                <p>Secured International Rank 4 in Informatics Olympiad, multiple Gold Medals in SOF Olympiads, and consistently ranked 1st in Silverzone competitions across Science, Maths, and STEM categories.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">8 Gold Medals</span>
-                    <span class="tech-tag">Zonal Rank 6</span>
-                    <span class="tech-tag">State Topper</span>
-                </div>
-                <div class="project-links">
-                    <a href="#education">View Details</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>Language Excellence</h3>
-                <p>Achieved International Rank 3 and State Rank 3 in National Sanskrit Olympiad, 1st National Rank in Balbodh Sanskrit, and 1st State Rank in Hindi Olympiad, showcasing linguistic mastery.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Sanskrit</span>
-                    <span class="tech-tag">Hindi</span>
-                    <span class="tech-tag">English</span>
-                </div>
-                <div class="project-links">
-                    <a href="#education">View Details</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>Science & Math Mastery</h3>
-                <p>Qualified for IMO, NSO, IOEL, IOS, and IOM Round 2. Achieved Zonal Rank 8 in Science Olympiad and demonstrated consistent excellence in mathematical competitions.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Multiple Qualifiers</span>
-                    <span class="tech-tag">Mathematics</span>
-                    <span class="tech-tag">Science</span>
-                </div>
-                <div class="project-links">
-                    <a href="#education">View Details</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>Special Recognitions</h3>
-                <p>ISRO Quiz participant, CBSE English exam topper, Read N' Grow competition winner, and CENFEST CPS Brochure Making consolation prize recipient for creativity and design.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">ISRO</span>
-                    <span class="tech-tag">Design</span>
-                    <span class="tech-tag">Literature</span>
-                </div>
-                <div class="project-links">
-                    <a href="#education">View Details</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2 class="section-title">&lt;Education & Achievements/&gt;</h2>
-        <div class="education-timeline">
-            <div class="education-item">
-                <div class="education-content">
-                    <h3>Class 9 (Currently Studying)</h3>
-                    <p class="date">2025 - 2026 Present</p>
-                    <p><strong>Bhavan's Bhagwandas Purohit Vidya Mandir, Ashti</strong></p>
-                    <p>Maintaining academic excellence and actively participating in various competitions and learning opportunities. Continuing the legacy of consistent performance and curiosity-driven learning.</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <div class="education-content">
-                    <h3>Class 8 - Defining Academic Year</h3>
-                    <p class="date">2024 - 2025</p>
-                    <p><strong>Major Achievements:</strong></p>
-                    <p>🏆 <strong>NMTC:</strong> Qualified for Round 2 (Sub-Junior & Junior categories)</p>
-                    <p>🥇 <strong>VVM:</strong> Vidarbha Topper in Vidyarthi Vigyan Manthan</p>
-                    <p>🌏 <strong>Sanskrit Olympiad:</strong> International Rank 3, State Rank 3</p>
-                    <p>🥇 <strong>VNIT Exquizit:</strong> 1st Prize in prestigious quiz</p>
-                    <p>💻 <strong>Informatics Olympiad:</strong> International Rank 4, Zonal Rank 6</p>
-                    <p>🌉 <strong>VNIT Crepido:</strong> 2nd Prize in Bridge Design Challenge</p>
-                    <p>💰 <strong>VNIT Wallstreet:</strong> 3rd Prize in Finance Competition</p>
-                    <p>📊 Qualified for Round 2 in IMO, NSO, IOEL, IOS, and IOM</p>
-                    <p>🏅 Multiple Gold Medals in SOF Olympiads (Maths, Science, SST, Hindi)</p>
-                    <p>🥇 Several 1st Ranks in Silverzone (Science, English, Maths, Hindi, SST, STEM)</p>
-                    <p>🎨 Consolation Prize in CENFEST CPS Brochure Making</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <div class="education-content">
-                    <h3>Class 7 - Beginning of Excellence</h3>
-                    <p class="date">2023 - 2024</p>
-                    <p><strong>Key Achievements:</strong></p>
-                    <p>🥉 <strong>VNIT Exquizit:</strong> 3rd Prize</p>
-                    <p>🥉 <strong>Hindi Olympiad:</strong> 3rd State Rank, 1st School Rank (Silverzone)</p>
-                    <p>🥇 <strong>Sanskrit Excellence:</strong> 1st State Rank in Sanskrit Olympiad, 1st National Rank in Balbodh Sanskrit</p>
-                    <p>🏅 Total: 8 Gold, 2 Silver, 1 Bronze across various Olympiads</p>
-                    <p>🥇 1st Prize in Mahatma Gandhi Hindi Olympiad</p>
-                    <p>🚀 Represented school in ISRO Quiz</p>
-                    <p>📚 1st Prize in CBSE English Written Exam</p>
-                    <p>📖 Topped Read N' Grow competition</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <div class="education-content">
-                    <h3>Class 6 & Earlier</h3>
-                    <p class="date">2021 - 2022</p>
-                    <p><strong>Bhavan's Bhagwandas Purohit Vidya Mandir, Ashti</strong></p>
-                    <p>Maintained strong academic performance and participated in school-level competitions. Built the foundation for future excellence through consistent learning and curiosity.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title">&lt;Contact/&gt;</h2>
-        <div class="contact-container">
-            <p style="font-size: 20px; margin-bottom: 30px;">Let's connect and explore the world of STEM together!</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Email</h3>
-                    <a href="mailto:ayushman.choudhary2711@gmail.com">ayushman.choudhary2711@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Phone</h3>
-                    <a href="tel:+919272160098">+91 9272160098</a>
-                </div>
-                <div class="contact-item">
-                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Location</h3>
-                    <p>Ashti, Nagpur, Maharashtra</p>
-                </div>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/ayushmanchoudhary" title="GitHub" target="_blank">⚡</a>
-                <a href="https://linkedin.com/in/ayushmanchoudhary" title="LinkedIn" target="_blank">🔗</a>
-                <a href="mailto:ayushman.choudhary2711@gmail.com" title="Email">📧</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Ayushman Choudhary. Designed with 💙 and coded in the digital realm.</p>
-        <p style="margin-top: 10px; font-size: 14px;">Olympiad Champion | STEM Excellence | Future Innovator</p>
-    </footer>
-
-    <script>
-        // Typing Animation
-        const phrases = [
-            "NMTC Qualifier | VVM Vidarbha Topper...",
-            "International Rank 3 in Sanskrit Olympiad...",
-            "Exploring science, mathematics, and innovation...",
-            "Building the future through STEM excellence..."
-        ];
-        
-        let phraseIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const typingElement = document.getElementById('typingText');
-        
-        function typeText() {
-            const currentPhrase = phrases[phraseIndex];
-            
-            if (isDeleting) {
-                typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
-                charIndex++;
-            }
-            
-            if (!isDeleting && charIndex === currentPhrase.length) {
-                setTimeout(() => isDeleting = true, 2000);
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                phraseIndex = (phraseIndex + 1) % phrases.length;
-            }
-            
-            const typingSpeed = isDeleting ? 50 : 100;
-            setTimeout(typeText, typingSpeed);
-        }
-        
-        typeText();
-
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Scroll Animation for sections
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(50px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
-        });
-
-        // Particle effect on mouse move
-        document.addEventListener('mousemove', (e) => {
-            if (Math.random() > 0.95) {
-                const particle = document.createElement('div');
-                particle.style.position = 'fixed';
-                particle.style.left = e.clientX + 'px';
-                particle.style.top = e.clientY + 'px';
-                particle.style.width = '2px';
-                particle.style.height = '2px';
-                particle.style.background = 'var(--cyber-blue)';
-                particle.style.borderRadius = '50%';
-                particle.style.pointerEvents = 'none';
-                particle.style.zIndex = '9999';
-                particle.style.boxShadow = '0 0 10px var(--cyber-blue)';
-                document.body.appendChild(particle);
-                
-                setTimeout(() => {
-                    particle.style.transition = 'opacity 0.5s, transform 0.5s';
-                    particle.style.opacity = '0';
-                    particle.style.transform = 'translateY(-20px)';
-                    setTimeout(() => particle.remove(), 500);
-                }, 50);
-            }
-        });
-    </script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayushman Choudhary | Cyber Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --cyber-pink: #ff006e;
-            --cyber-blue: #00f5ff;
-            --cyber-purple: #8b00ff;
-            --cyber-green: #00ff41;
-            --dark-bg: #0a0e27;
-            --darker-bg: #050814;
-        }
-
-        body {
-            font-family: 'Courier New', monospace;
-            background: var(--darker-bg);
-            color: var(--cyber-blue);
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-
-        /* Animated Background */
-        .cyber-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: linear-gradient(45deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
-        }
-
-        .grid-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                linear-gradient(rgba(0, 245, 255, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 245, 255, 0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
-            z-index: -1;
-            animation: gridMove 20s linear infinite;
-        }
-
-        @keyframes gridMove {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(50px); }
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            padding: 20px 50px;
-            background: rgba(10, 14, 39, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid var(--cyber-blue);
-            z-index: 10000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: var(--cyber-pink);
-            text-shadow: 0 0 10px var(--cyber-pink);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--cyber-blue);
-            text-decoration: none;
-            padding: 8px 15px;
-            border: 1px solid transparent;
-            transition: all 0.3s;
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            border: 1px solid var(--cyber-blue);
-            box-shadow: 0 0 20px var(--cyber-blue);
-            background: rgba(0, 245, 255, 0.1);
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 100px 20px 50px;
-            position: relative;
-        }
-
-        .glitch {
-            font-size: 72px;
-            font-weight: bold;
-            color: var(--cyber-pink);
-            text-shadow: 
-                0 0 10px var(--cyber-pink),
-                0 0 20px var(--cyber-pink),
-                0 0 40px var(--cyber-pink);
-            animation: glitch 1s infinite;
-            margin-bottom: 20px;
-        }
-
-        @keyframes glitch {
-            0%, 100% { transform: translate(0); }
-            20% { transform: translate(-2px, 2px); }
-            40% { transform: translate(-2px, -2px); }
-            60% { transform: translate(2px, 2px); }
-            80% { transform: translate(2px, -2px); }
-        }
-
-        .subtitle {
-            font-size: 28px;
-            color: var(--cyber-blue);
-            margin-bottom: 30px;
-            text-shadow: 0 0 10px var(--cyber-blue);
-        }
-
-        .typing-text {
-            font-size: 20px;
-            color: var(--cyber-green);
-            min-height: 30px;
-            margin-bottom: 40px;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .cyber-btn {
-            padding: 15px 40px;
-            background: transparent;
-            color: var(--cyber-blue);
-            border: 2px solid var(--cyber-blue);
-            font-size: 16px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .cyber-btn:hover {
-            color: var(--darker-bg);
-            box-shadow: 0 0 30px var(--cyber-blue);
-        }
-
-        .cyber-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: var(--cyber-blue);
-            transition: left 0.3s;
-            z-index: -1;
-        }
-
-        .cyber-btn:hover::before {
-            left: 0;
-        }
-
-        /* Section Styles */
-        section {
-            min-height: 100vh;
-            padding: 100px 50px;
-            position: relative;
-        }
-
-        .section-title {
-            font-size: 48px;
-            color: var(--cyber-pink);
-            text-align: center;
-            margin-bottom: 60px;
-            text-shadow: 0 0 20px var(--cyber-pink);
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--cyber-pink), transparent);
-        }
-
-        /* About Section */
-        .about-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .about-text {
-            font-size: 18px;
-            line-height: 1.8;
-            color: var(--cyber-blue);
-        }
-
-        .about-text p {
-            margin-bottom: 20px;
-        }
-
-        .profile-card {
-            background: rgba(139, 0, 255, 0.1);
-            border: 2px solid var(--cyber-purple);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 30px rgba(139, 0, 255, 0.3);
-            text-align: center;
-        }
-
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 3px solid var(--cyber-pink);
-            margin-bottom: 20px;
-            box-shadow: 0 0 30px var(--cyber-pink);
-            background: linear-gradient(135deg, var(--cyber-pink), var(--cyber-purple));
-        }
-
-        .info-item {
-            margin: 15px 0;
-            font-size: 16px;
-        }
-
-        .info-label {
-            color: var(--cyber-green);
-            font-weight: bold;
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .skill-category {
-            background: rgba(0, 245, 255, 0.05);
-            border: 2px solid var(--cyber-blue);
-            padding: 30px;
-            border-radius: 10px;
-            transition: all 0.3s;
-        }
-
-        .skill-category:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 40px rgba(0, 245, 255, 0.3);
-        }
-
-        .skill-category h3 {
-            color: var(--cyber-pink);
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-
-        .skill-list {
-            list-style: none;
-        }
-
-        .skill-list li {
-            margin: 10px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .skill-list li::before {
-            content: '▹';
-            position: absolute;
-            left: 0;
-            color: var(--cyber-green);
-        }
-
-        /* Projects Section */
-        .projects-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-        }
-
-        .project-card {
-            background: rgba(255, 0, 110, 0.05);
-            border: 2px solid var(--cyber-pink);
-            padding: 30px;
-            border-radius: 10px;
-            transition: all 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 0, 110, 0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .project-card:hover::before {
-            left: 100%;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 40px rgba(255, 0, 110, 0.3);
-        }
-
-        .project-card h3 {
-            color: var(--cyber-blue);
-            margin-bottom: 15px;
-            font-size: 24px;
-        }
-
-        .project-card p {
-            margin-bottom: 20px;
-            color: #ccc;
-        }
-
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .tech-tag {
-            background: rgba(0, 255, 65, 0.1);
-            border: 1px solid var(--cyber-green);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            color: var(--cyber-green);
-        }
-
-        .project-links {
-            display: flex;
-            gap: 15px;
-        }
-
-        .project-links a {
-            color: var(--cyber-blue);
-            text-decoration: none;
-            padding: 8px 20px;
-            border: 1px solid var(--cyber-blue);
-            border-radius: 5px;
-            transition: all 0.3s;
-        }
-
-        .project-links a:hover {
-            background: var(--cyber-blue);
-            color: var(--darker-bg);
-            box-shadow: 0 0 20px var(--cyber-blue);
-        }
-
-        /* Education Section */
-        .education-timeline {
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .education-timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(to bottom, var(--cyber-blue), var(--cyber-pink));
-        }
-
-        .education-item {
-            margin-bottom: 50px;
-            position: relative;
-        }
-
-        .education-content {
-            background: rgba(0, 245, 255, 0.05);
-            border: 2px solid var(--cyber-blue);
-            padding: 30px;
-            border-radius: 10px;
-            margin-left: calc(50% + 30px);
-            transition: all 0.3s;
-        }
-
-        .education-item:nth-child(even) .education-content {
-            margin-left: 0;
-            margin-right: calc(50% + 30px);
-        }
-
-        .education-content:hover {
-            box-shadow: 0 0 30px rgba(0, 245, 255, 0.3);
-        }
-
-        .education-content h3 {
-            color: var(--cyber-pink);
-            margin-bottom: 10px;
-        }
-
-        .education-content .date {
-            color: var(--cyber-green);
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        /* Contact Section */
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 50px;
-        }
-
-        .contact-item {
-            background: rgba(139, 0, 255, 0.1);
-            border: 2px solid var(--cyber-purple);
-            padding: 30px;
-            border-radius: 10px;
-            min-width: 200px;
-            transition: all 0.3s;
-        }
-
-        .contact-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 40px rgba(139, 0, 255, 0.3);
-        }
-
-        .contact-item a {
-            color: var(--cyber-blue);
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .contact-item a:hover {
-            color: var(--cyber-pink);
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .social-links a {
-            color: var(--cyber-blue);
-            font-size: 32px;
-            transition: all 0.3s;
-        }
-
-        .social-links a:hover {
-            color: var(--cyber-pink);
-            transform: scale(1.2);
-            filter: drop-shadow(0 0 20px var(--cyber-pink));
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: rgba(10, 14, 39, 0.8);
-            border-top: 2px solid var(--cyber-blue);
-            color: var(--cyber-blue);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            nav {
-                padding: 20px;
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
-            }
-
-            .glitch {
-                font-size: 48px;
-            }
-
-            .subtitle {
-                font-size: 20px;
-            }
-
-            section {
-                padding: 80px 20px;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .education-timeline::before {
-                left: 0;
-            }
-
-            .education-content {
-                margin-left: 30px !important;
-                margin-right: 0 !important;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="cyber-bg"></div>
-    <div class="grid-overlay"></div>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">&lt;AyushmanChoudhary/&gt;</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Achievements</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1 class="glitch">AYUSHMAN CHOUDHARY</h1>
-        <p class="subtitle">Student | Olympiad Champion | STEM Enthusiast</p>
-        <div class="typing-text" id="typingText"></div>
-        <div class="cta-buttons">
-            <a href="#projects" class="cyber-btn">View Achievements</a>
-            <a href="#contact" class="cyber-btn">Get In Touch</a>
-            <a href="Ayushman_Choudhary_Resume.pdf" class="cyber-btn" download>Download Resume</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2 class="section-title">&lt;About Me/&gt;</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Hello! I'm Ayushman Choudhary, a passionate Class 9 student from Nagpur, Maharashtra, with a deep interest in science, mathematics, and technology. My journey in academics began with curiosity and has evolved into a dedication to achieving excellence across multiple domains.</p>
-                <p>I specialize in competitive learning and have consistently proven my abilities through numerous national and international Olympiads. From securing International Rank 3 in Sanskrit Olympiad to emerging as Vidarbha Topper in VVM, my achievements reflect my commitment to academic excellence.</p>
-                <p>When I'm not studying, you can find me participating in quizzes, exploring programming languages like Python and JavaScript, or working on innovative projects that combine creativity with logic.</p>
-                <p>I'm always eager to learn new concepts, participate in competitions, and contribute to research-oriented learning that pushes the boundaries of knowledge.</p>
-            </div>
-            <div class="profile-card">
-                <div class="profile-image"></div>
+                <img src="profile.jpg" alt="Ayushman Choudhary" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-image" style="display: none; align-items: center; justify-content: center; font-size: 60px; color: var(--cyber-blue);">AC</div>
                 <div class="info-item">
                     <span class="info-label">School:</span> Bhavan's Bhagwandas Purohit Vidya Mandir
                 </div>
@@ -1905,7 +978,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            z-index: -2;
             background: linear-gradient(45deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
         }
 
@@ -1935,7 +1008,7 @@
             left: 0;
             right: 0;
             width: 100%;
-            padding: 20px 50px;
+            padding: 15px 30px;
             background: rgba(10, 14, 39, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 2px solid var(--cyber-blue);
@@ -1946,25 +1019,30 @@
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             color: var(--cyber-pink);
             text-shadow: 0 0 10px var(--cyber-pink);
+            white-space: nowrap;
         }
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 20px;
             list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
         }
 
         .nav-links a {
             color: var(--cyber-blue);
             text-decoration: none;
-            padding: 8px 15px;
+            padding: 8px 12px;
             border: 1px solid transparent;
             transition: all 0.3s;
             position: relative;
+            font-size: 14px;
+            white-space: nowrap;
         }
 
         .nav-links a:hover {
@@ -2122,9 +1200,11 @@
             height: 200px;
             border-radius: 50%;
             border: 3px solid var(--cyber-pink);
-            margin-bottom: 20px;
+            margin: 0 auto 20px;
             box-shadow: 0 0 30px var(--cyber-pink);
             background: linear-gradient(135deg, var(--cyber-pink), var(--cyber-purple));
+            object-fit: cover;
+            display: block;
         }
 
         .info-item {
@@ -2471,7 +1551,8 @@
                 <p>I'm always eager to learn new concepts, participate in competitions, and contribute to research-oriented learning that pushes the boundaries of knowledge.</p>
             </div>
             <div class="profile-card">
-                <div class="profile-image"></div>
+                <img src="profile.jpg" alt="Ayushman Choudhary" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-image" style="display: none; align-items: center; justify-content: center; font-size: 60px; color: var(--cyber-blue);">AC</div>
                 <div class="info-item">
                     <span class="info-label">School:</span> Bhavan's Bhagwandas Purohit Vidya Mandir
                 </div>
@@ -2840,7 +1921,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            z-index: -2;
             background: linear-gradient(45deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
         }
 
@@ -2870,7 +1951,7 @@
             left: 0;
             right: 0;
             width: 100%;
-            padding: 20px 50px;
+            padding: 15px 30px;
             background: rgba(10, 14, 39, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 2px solid var(--cyber-blue);
@@ -2881,25 +1962,30 @@
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             color: var(--cyber-pink);
             text-shadow: 0 0 10px var(--cyber-pink);
+            white-space: nowrap;
         }
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 20px;
             list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
         }
 
         .nav-links a {
             color: var(--cyber-blue);
             text-decoration: none;
-            padding: 8px 15px;
+            padding: 8px 12px;
             border: 1px solid transparent;
             transition: all 0.3s;
             position: relative;
+            font-size: 14px;
+            white-space: nowrap;
         }
 
         .nav-links a:hover {
@@ -3057,9 +2143,11 @@
             height: 200px;
             border-radius: 50%;
             border: 3px solid var(--cyber-pink);
-            margin-bottom: 20px;
+            margin: 0 auto 20px;
             box-shadow: 0 0 30px var(--cyber-pink);
             background: linear-gradient(135deg, var(--cyber-pink), var(--cyber-purple));
+            object-fit: cover;
+            display: block;
         }
 
         .info-item {
@@ -3406,7 +2494,8 @@
                 <p>I'm always eager to learn new concepts, participate in competitions, and contribute to research-oriented learning that pushes the boundaries of knowledge.</p>
             </div>
             <div class="profile-card">
-                <div class="profile-image"></div>
+                <img src="profile.jpg" alt="Ayushman Choudhary" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-image" style="display: none; align-items: center; justify-content: center; font-size: 60px; color: var(--cyber-blue);">AC</div>
                 <div class="info-item">
                     <span class="info-label">School:</span> Bhavan's Bhagwandas Purohit Vidya Mandir
                 </div>
@@ -3775,7 +2864,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            z-index: -2;
             background: linear-gradient(45deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
         }
 
@@ -3805,7 +2894,7 @@
             left: 0;
             right: 0;
             width: 100%;
-            padding: 20px 50px;
+            padding: 15px 30px;
             background: rgba(10, 14, 39, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 2px solid var(--cyber-blue);
@@ -3816,25 +2905,30 @@
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             color: var(--cyber-pink);
             text-shadow: 0 0 10px var(--cyber-pink);
+            white-space: nowrap;
         }
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 20px;
             list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
         }
 
         .nav-links a {
             color: var(--cyber-blue);
             text-decoration: none;
-            padding: 8px 15px;
+            padding: 8px 12px;
             border: 1px solid transparent;
             transition: all 0.3s;
             position: relative;
+            font-size: 14px;
+            white-space: nowrap;
         }
 
         .nav-links a:hover {
@@ -3992,9 +3086,11 @@
             height: 200px;
             border-radius: 50%;
             border: 3px solid var(--cyber-pink);
-            margin-bottom: 20px;
+            margin: 0 auto 20px;
             box-shadow: 0 0 30px var(--cyber-pink);
             background: linear-gradient(135deg, var(--cyber-pink), var(--cyber-purple));
+            object-fit: cover;
+            display: block;
         }
 
         .info-item {
@@ -4341,7 +3437,3780 @@
                 <p>I'm always eager to learn new concepts, participate in competitions, and contribute to research-oriented learning that pushes the boundaries of knowledge.</p>
             </div>
             <div class="profile-card">
-                <div class="profile-image"></div>
+                <img src="profile.jpg" alt="Ayushman Choudhary" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-image" style="display: none; align-items: center; justify-content: center; font-size: 60px; color: var(--cyber-blue);">AC</div>
+                <div class="info-item">
+                    <span class="info-label">School:</span> Bhavan's Bhagwandas Purohit Vidya Mandir
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Class:</span> 9th Grade
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span> Ashti, Nagpur
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Specialization:</span> STEM & Olympiads
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">&lt;Skills/&gt;</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Computational Thinking</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Academic Excellence</h3>
+                <ul class="skill-list">
+                    <li>Mathematics</li>
+                    <li>Science</li>
+                    <li>Sanskrit</li>
+                    <li>Hindi & English</li>
+                    <li>Social Studies</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul class="skill-list">
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                    <li>Communication</li>
+                    <li>Critical Thinking</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Special Abilities</h3>
+                <ul class="skill-list">
+                    <li>Logical Reasoning</li>
+                    <li>Research Skills</li>
+                    <li>Creative Design</li>
+                    <li>Quiz Competitions</li>
+                    <li>Olympiad Excellence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">&lt;Achievements/&gt;</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Class 8 Excellence</h3>
+                <p>Achieved remarkable success across national and international Olympiads. Qualified NMTC Round 2, emerged as VVM Vidarbha Topper, and secured International Rank 3 in Sanskrit Olympiad.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">NMTC Qualifier</span>
+                    <span class="tech-tag">VVM Topper</span>
+                    <span class="tech-tag">Int. Rank 3</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>VNIT Competitions</h3>
+                <p>Won 1st Prize in VNIT Exquizit quiz competition, 2nd Prize in Crepido Bridge Design Challenge, and 3rd Prize in Wallstreet Finance, demonstrating interdisciplinary excellence.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Quiz Champion</span>
+                    <span class="tech-tag">Bridge Design</span>
+                    <span class="tech-tag">Finance</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Olympiad Medalist</h3>
+                <p>Secured International Rank 4 in Informatics Olympiad, multiple Gold Medals in SOF Olympiads, and consistently ranked 1st in Silverzone competitions across Science, Maths, and STEM categories.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">8 Gold Medals</span>
+                    <span class="tech-tag">Zonal Rank 6</span>
+                    <span class="tech-tag">State Topper</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Language Excellence</h3>
+                <p>Achieved International Rank 3 and State Rank 3 in National Sanskrit Olympiad, 1st National Rank in Balbodh Sanskrit, and 1st State Rank in Hindi Olympiad, showcasing linguistic mastery.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Sanskrit</span>
+                    <span class="tech-tag">Hindi</span>
+                    <span class="tech-tag">English</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Science & Math Mastery</h3>
+                <p>Qualified for IMO, NSO, IOEL, IOS, and IOM Round 2. Achieved Zonal Rank 8 in Science Olympiad and demonstrated consistent excellence in mathematical competitions.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Multiple Qualifiers</span>
+                    <span class="tech-tag">Mathematics</span>
+                    <span class="tech-tag">Science</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Special Recognitions</h3>
+                <p>ISRO Quiz participant, CBSE English exam topper, Read N' Grow competition winner, and CENFEST CPS Brochure Making consolation prize recipient for creativity and design.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">ISRO</span>
+                    <span class="tech-tag">Design</span>
+                    <span class="tech-tag">Literature</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">&lt;Education & Achievements/&gt;</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 9 (Currently Studying)</h3>
+                    <p class="date">2024 - Present</p>
+                    <p><strong>Bhavan's Bhagwandas Purohit Vidya Mandir, Ashti</strong></p>
+                    <p>Maintaining academic excellence and actively participating in various competitions and learning opportunities. Continuing the legacy of consistent performance and curiosity-driven learning.</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 8 - Defining Academic Year</h3>
+                    <p class="date">2023 - 2024</p>
+                    <p><strong>Major Achievements:</strong></p>
+                    <p>🏆 <strong>NMTC:</strong> Qualified for Round 2 (Sub-Junior & Junior categories)</p>
+                    <p>🥇 <strong>VVM:</strong> Vidarbha Topper in Vidyarthi Vigyan Manthan</p>
+                    <p>🌏 <strong>Sanskrit Olympiad:</strong> International Rank 3, State Rank 3</p>
+                    <p>🥇 <strong>VNIT Exquizit:</strong> 1st Prize in prestigious quiz</p>
+                    <p>💻 <strong>Informatics Olympiad:</strong> International Rank 4, Zonal Rank 6</p>
+                    <p>🌉 <strong>VNIT Crepido:</strong> 2nd Prize in Bridge Design Challenge</p>
+                    <p>💰 <strong>VNIT Wallstreet:</strong> 3rd Prize in Finance Competition</p>
+                    <p>📊 Qualified for Round 2 in IMO, NSO, IOEL, IOS, and IOM</p>
+                    <p>🏅 Multiple Gold Medals in SOF Olympiads (Maths, Science, SST, Hindi)</p>
+                    <p>🥇 Several 1st Ranks in Silverzone (Science, English, Maths, Hindi, SST, STEM)</p>
+                    <p>🎨 Consolation Prize in CENFEST CPS Brochure Making</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 7 - Beginning of Excellence</h3>
+                    <p class="date">2022 - 2023</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <p>🥉 <strong>VNIT Exquizit:</strong> 3rd Prize</p>
+                    <p>🥉 <strong>Hindi Olympiad:</strong> 3rd State Rank, 1st School Rank (Silverzone)</p>
+                    <p>🥇 <strong>Sanskrit Excellence:</strong> 1st State Rank in Sanskrit Olympiad, 1st National Rank in Balbodh Sanskrit</p>
+                    <p>🏅 Total: 8 Gold, 2 Silver, 1 Bronze across various Olympiads</p>
+                    <p>🥇 1st Prize in Mahatma Gandhi Hindi Olympiad</p>
+                    <p>🚀 Represented school in ISRO Quiz</p>
+                    <p>📚 1st Prize in CBSE English Written Exam</p>
+                    <p>📖 Topped Read N' Grow competition</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 6 & Earlier</h3>
+                    <p class="date">2021 - 2022</p>
+                    <p><strong>Bhavan's Bhagwandas Purohit Vidya Mandir, Ashti</strong></p>
+                    <p>Maintained strong academic performance and participated in school-level competitions. Built the foundation for future excellence through consistent learning and curiosity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">&lt;Contact/&gt;</h2>
+        <div class="contact-container">
+            <p style="font-size: 20px; margin-bottom: 30px;">Let's connect and explore the world of STEM together!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Email</h3>
+                    <a href="mailto:ayushman.choudhary2711@gmail.com">ayushman.choudhary2711@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Phone</h3>
+                    <a href="tel:+919272160098">+91 9272160098</a>
+                </div>
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Location</h3>
+                    <p>Ashti, Nagpur, Maharashtra</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/ayushmanchoudhary" title="GitHub" target="_blank">⚡</a>
+                <a href="https://linkedin.com/in/ayushmanchoudhary" title="LinkedIn" target="_blank">🔗</a>
+                <a href="mailto:ayushman.choudhary2711@gmail.com" title="Email">📧</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ayushman Choudhary. Designed with 💙 and coded in the digital realm.</p>
+        <p style="margin-top: 10px; font-size: 14px;">Olympiad Champion | STEM Excellence | Future Innovator</p>
+    </footer>
+
+    <script>
+        // Typing Animation
+        const phrases = [
+            "NMTC Qualifier | VVM Vidarbha Topper...",
+            "International Rank 3 in Sanskrit Olympiad...",
+            "Exploring science, mathematics, and innovation...",
+            "Building the future through STEM excellence..."
+        ];
+        
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typingText');
+        
+        function typeText() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+            }
+            
+            const typingSpeed = isDeleting ? 50 : 100;
+            setTimeout(typeText, typingSpeed);
+        }
+        
+        typeText();
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll Animation for sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Particle effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.95) {
+                const particle = document.createElement('div');
+                particle.style.position = 'fixed';
+                particle.style.left = e.clientX + 'px';
+                particle.style.top = e.clientY + 'px';
+                particle.style.width = '2px';
+                particle.style.height = '2px';
+                particle.style.background = 'var(--cyber-blue)';
+                particle.style.borderRadius = '50%';
+                particle.style.pointerEvents = 'none';
+                particle.style.zIndex = '9999';
+                particle.style.boxShadow = '0 0 10px var(--cyber-blue)';
+                document.body.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.style.transition = 'opacity 0.5s, transform 0.5s';
+                    particle.style.opacity = '0';
+                    particle.style.transform = 'translateY(-20px)';
+                    setTimeout(() => particle.remove(), 500);
+                }, 50);
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushman Choudhary | Cyber Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cyber-pink: #ff006e;
+            --cyber-blue: #00f5ff;
+            --cyber-purple: #8b00ff;
+            --cyber-green: #00ff41;
+            --dark-bg: #0a0e27;
+            --darker-bg: #050814;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: var(--darker-bg);
+            color: var(--cyber-blue);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Animated Background */
+        .cyber-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(45deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+        }
+
+        .grid-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 245, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 245, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(50px); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding: 15px 30px;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--cyber-blue);
+            z-index: 10000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--cyber-pink);
+            text-shadow: 0 0 10px var(--cyber-pink);
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-links a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+            position: relative;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            border: 1px solid var(--cyber-blue);
+            box-shadow: 0 0 20px var(--cyber-blue);
+            background: rgba(0, 245, 255, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px 50px;
+            position: relative;
+        }
+
+        .glitch {
+            font-size: 72px;
+            font-weight: bold;
+            color: var(--cyber-pink);
+            text-shadow: 
+                0 0 10px var(--cyber-pink),
+                0 0 20px var(--cyber-pink),
+                0 0 40px var(--cyber-pink);
+            animation: glitch 1s infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+
+        .subtitle {
+            font-size: 28px;
+            color: var(--cyber-blue);
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px var(--cyber-blue);
+        }
+
+        .typing-text {
+            font-size: 20px;
+            color: var(--cyber-green);
+            min-height: 30px;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cyber-btn {
+            padding: 15px 40px;
+            background: transparent;
+            color: var(--cyber-blue);
+            border: 2px solid var(--cyber-blue);
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cyber-btn:hover {
+            color: var(--darker-bg);
+            box-shadow: 0 0 30px var(--cyber-blue);
+        }
+
+        .cyber-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--cyber-blue);
+            transition: left 0.3s;
+            z-index: -1;
+        }
+
+        .cyber-btn:hover::before {
+            left: 0;
+        }
+
+        /* Section Styles */
+        section {
+            min-height: 100vh;
+            padding: 100px 50px;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 48px;
+            color: var(--cyber-pink);
+            text-align: center;
+            margin-bottom: 60px;
+            text-shadow: 0 0 20px var(--cyber-pink);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--cyber-pink), transparent);
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--cyber-blue);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        .profile-card {
+            background: rgba(139, 0, 255, 0.1);
+            border: 2px solid var(--cyber-purple);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(139, 0, 255, 0.3);
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid var(--cyber-pink);
+            margin: 0 auto 20px;
+            box-shadow: 0 0 30px var(--cyber-pink);
+            background: linear-gradient(135deg, var(--cyber-pink), var(--cyber-purple));
+            object-fit: cover;
+            display: block;
+        }
+
+        .info-item {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .info-label {
+            color: var(--cyber-green);
+            font-weight: bold;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background: rgba(0, 245, 255, 0.05);
+            border: 2px solid var(--cyber-blue);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(0, 245, 255, 0.3);
+        }
+
+        .skill-category h3 {
+            color: var(--cyber-pink);
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--cyber-green);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .project-card {
+            background: rgba(255, 0, 110, 0.05);
+            border: 2px solid var(--cyber-pink);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 0, 110, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(255, 0, 110, 0.3);
+        }
+
+        .project-card h3 {
+            color: var(--cyber-blue);
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .project-card p {
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
+            background: rgba(0, 255, 65, 0.1);
+            border: 1px solid var(--cyber-green);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--cyber-green);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-links a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            padding: 8px 20px;
+            border: 1px solid var(--cyber-blue);
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .project-links a:hover {
+            background: var(--cyber-blue);
+            color: var(--darker-bg);
+            box-shadow: 0 0 20px var(--cyber-blue);
+        }
+
+        /* Education Section */
+        .education-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .education-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--cyber-blue), var(--cyber-pink));
+        }
+
+        .education-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .education-content {
+            background: rgba(0, 245, 255, 0.05);
+            border: 2px solid var(--cyber-blue);
+            padding: 30px;
+            border-radius: 10px;
+            margin-left: calc(50% + 30px);
+            transition: all 0.3s;
+        }
+
+        .education-item:nth-child(even) .education-content {
+            margin-left: 0;
+            margin-right: calc(50% + 30px);
+        }
+
+        .education-content:hover {
+            box-shadow: 0 0 30px rgba(0, 245, 255, 0.3);
+        }
+
+        .education-content h3 {
+            color: var(--cyber-pink);
+            margin-bottom: 10px;
+        }
+
+        .education-content .date {
+            color: var(--cyber-green);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .contact-item {
+            background: rgba(139, 0, 255, 0.1);
+            border: 2px solid var(--cyber-purple);
+            padding: 30px;
+            border-radius: 10px;
+            min-width: 200px;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(139, 0, 255, 0.3);
+        }
+
+        .contact-item a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .contact-item a:hover {
+            color: var(--cyber-pink);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: var(--cyber-blue);
+            font-size: 32px;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--cyber-pink);
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 20px var(--cyber-pink));
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(10, 14, 39, 0.8);
+            border-top: 2px solid var(--cyber-blue);
+            color: var(--cyber-blue);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .glitch {
+                font-size: 48px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            section {
+                padding: 80px 20px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .education-timeline::before {
+                left: 0;
+            }
+
+            .education-content {
+                margin-left: 30px !important;
+                margin-right: 0 !important;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-bg"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">&lt;AyushmanChoudhary/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1 class="glitch">AYUSHMAN CHOUDHARY</h1>
+        <p class="subtitle">Student | Olympiad Champion | STEM Enthusiast</p>
+        <div class="typing-text" id="typingText"></div>
+        <div class="cta-buttons">
+            <a href="#projects" class="cyber-btn">View Achievements</a>
+            <a href="#contact" class="cyber-btn">Get In Touch</a>
+            <a href="Ayushman_Choudhary_Resume.pdf" class="cyber-btn" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">&lt;About Me/&gt;</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Ayushman Choudhary, a passionate Class 9 student from Nagpur, Maharashtra, with a deep interest in science, mathematics, and technology. My journey in academics began with curiosity and has evolved into a dedication to achieving excellence across multiple domains.</p>
+                <p>I specialize in competitive learning and have consistently proven my abilities through numerous national and international Olympiads. From securing International Rank 3 in Sanskrit Olympiad to emerging as Vidarbha Topper in VVM, my achievements reflect my commitment to academic excellence.</p>
+                <p>When I'm not studying, you can find me participating in quizzes, exploring programming languages like Python and JavaScript, or working on innovative projects that combine creativity with logic.</p>
+                <p>I'm always eager to learn new concepts, participate in competitions, and contribute to research-oriented learning that pushes the boundaries of knowledge.</p>
+            </div>
+            <div class="profile-card">
+                <img src="profile.jpg" alt="Ayushman Choudhary" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-image" style="display: none; align-items: center; justify-content: center; font-size: 60px; color: var(--cyber-blue);">AC</div>
+                <div class="info-item">
+                    <span class="info-label">School:</span> Bhavan's Bhagwandas Purohit Vidya Mandir
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Class:</span> 9th Grade
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span> Ashti, Nagpur
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Specialization:</span> STEM & Olympiads
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">&lt;Skills/&gt;</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Computational Thinking</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Academic Excellence</h3>
+                <ul class="skill-list">
+                    <li>Mathematics</li>
+                    <li>Science</li>
+                    <li>Sanskrit</li>
+                    <li>Hindi & English</li>
+                    <li>Social Studies</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul class="skill-list">
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                    <li>Communication</li>
+                    <li>Critical Thinking</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Special Abilities</h3>
+                <ul class="skill-list">
+                    <li>Logical Reasoning</li>
+                    <li>Research Skills</li>
+                    <li>Creative Design</li>
+                    <li>Quiz Competitions</li>
+                    <li>Olympiad Excellence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">&lt;Achievements/&gt;</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Class 8 Excellence</h3>
+                <p>Achieved remarkable success across national and international Olympiads. Qualified NMTC Round 2, emerged as VVM Vidarbha Topper, and secured International Rank 3 in Sanskrit Olympiad.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">NMTC Qualifier</span>
+                    <span class="tech-tag">VVM Topper</span>
+                    <span class="tech-tag">Int. Rank 3</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>VNIT Competitions</h3>
+                <p>Won 1st Prize in VNIT Exquizit quiz competition, 2nd Prize in Crepido Bridge Design Challenge, and 3rd Prize in Wallstreet Finance, demonstrating interdisciplinary excellence.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Quiz Champion</span>
+                    <span class="tech-tag">Bridge Design</span>
+                    <span class="tech-tag">Finance</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Olympiad Medalist</h3>
+                <p>Secured International Rank 4 in Informatics Olympiad, multiple Gold Medals in SOF Olympiads, and consistently ranked 1st in Silverzone competitions across Science, Maths, and STEM categories.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">8 Gold Medals</span>
+                    <span class="tech-tag">Zonal Rank 6</span>
+                    <span class="tech-tag">State Topper</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Language Excellence</h3>
+                <p>Achieved International Rank 3 and State Rank 3 in National Sanskrit Olympiad, 1st National Rank in Balbodh Sanskrit, and 1st State Rank in Hindi Olympiad, showcasing linguistic mastery.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Sanskrit</span>
+                    <span class="tech-tag">Hindi</span>
+                    <span class="tech-tag">English</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Science & Math Mastery</h3>
+                <p>Qualified for IMO, NSO, IOEL, IOS, and IOM Round 2. Achieved Zonal Rank 8 in Science Olympiad and demonstrated consistent excellence in mathematical competitions.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Multiple Qualifiers</span>
+                    <span class="tech-tag">Mathematics</span>
+                    <span class="tech-tag">Science</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Special Recognitions</h3>
+                <p>ISRO Quiz participant, CBSE English exam topper, Read N' Grow competition winner, and CENFEST CPS Brochure Making consolation prize recipient for creativity and design.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">ISRO</span>
+                    <span class="tech-tag">Design</span>
+                    <span class="tech-tag">Literature</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">&lt;Education & Achievements/&gt;</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 9 (Currently Studying)</h3>
+                    <p class="date">2024 - Present</p>
+                    <p><strong>Bhavan's Bhagwandas Purohit Vidya Mandir, Ashti</strong></p>
+                    <p>Maintaining academic excellence and actively participating in various competitions and learning opportunities. Continuing the legacy of consistent performance and curiosity-driven learning.</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 8 - Defining Academic Year</h3>
+                    <p class="date">2023 - 2024</p>
+                    <p><strong>Major Achievements:</strong></p>
+                    <p>🏆 <strong>NMTC:</strong> Qualified for Round 2 (Sub-Junior & Junior categories)</p>
+                    <p>🥇 <strong>VVM:</strong> Vidarbha Topper in Vidyarthi Vigyan Manthan</p>
+                    <p>🌏 <strong>Sanskrit Olympiad:</strong> International Rank 3, State Rank 3</p>
+                    <p>🥇 <strong>VNIT Exquizit:</strong> 1st Prize in prestigious quiz</p>
+                    <p>💻 <strong>Informatics Olympiad:</strong> International Rank 4, Zonal Rank 6</p>
+                    <p>🌉 <strong>VNIT Crepido:</strong> 2nd Prize in Bridge Design Challenge</p>
+                    <p>💰 <strong>VNIT Wallstreet:</strong> 3rd Prize in Finance Competition</p>
+                    <p>📊 Qualified for Round 2 in IMO, NSO, IOEL, IOS, and IOM</p>
+                    <p>🏅 Multiple Gold Medals in SOF Olympiads (Maths, Science, SST, Hindi)</p>
+                    <p>🥇 Several 1st Ranks in Silverzone (Science, English, Maths, Hindi, SST, STEM)</p>
+                    <p>🎨 Consolation Prize in CENFEST CPS Brochure Making</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 7 - Beginning of Excellence</h3>
+                    <p class="date">2022 - 2023</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <p>🥉 <strong>VNIT Exquizit:</strong> 3rd Prize</p>
+                    <p>🥉 <strong>Hindi Olympiad:</strong> 3rd State Rank, 1st School Rank (Silverzone)</p>
+                    <p>🥇 <strong>Sanskrit Excellence:</strong> 1st State Rank in Sanskrit Olympiad, 1st National Rank in Balbodh Sanskrit</p>
+                    <p>🏅 Total: 8 Gold, 2 Silver, 1 Bronze across various Olympiads</p>
+                    <p>🥇 1st Prize in Mahatma Gandhi Hindi Olympiad</p>
+                    <p>🚀 Represented school in ISRO Quiz</p>
+                    <p>📚 1st Prize in CBSE English Written Exam</p>
+                    <p>📖 Topped Read N' Grow competition</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 6 & Earlier</h3>
+                    <p class="date">2021 - 2022</p>
+                    <p><strong>Bhavan's Bhagwandas Purohit Vidya Mandir, Ashti</strong></p>
+                    <p>Maintained strong academic performance and participated in school-level competitions. Built the foundation for future excellence through consistent learning and curiosity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">&lt;Contact/&gt;</h2>
+        <div class="contact-container">
+            <p style="font-size: 20px; margin-bottom: 30px;">Let's connect and explore the world of STEM together!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Email</h3>
+                    <a href="mailto:ayushman.choudhary2711@gmail.com">ayushman.choudhary2711@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Phone</h3>
+                    <a href="tel:+919272160098">+91 9272160098</a>
+                </div>
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Location</h3>
+                    <p>Ashti, Nagpur, Maharashtra</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/ayushmanchoudhary" title="GitHub" target="_blank">⚡</a>
+                <a href="https://linkedin.com/in/ayushmanchoudhary" title="LinkedIn" target="_blank">🔗</a>
+                <a href="mailto:ayushman.choudhary2711@gmail.com" title="Email">📧</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ayushman Choudhary. Designed with 💙 and coded in the digital realm.</p>
+        <p style="margin-top: 10px; font-size: 14px;">Olympiad Champion | STEM Excellence | Future Innovator</p>
+    </footer>
+
+    <script>
+        // Typing Animation
+        const phrases = [
+            "NMTC Qualifier | VVM Vidarbha Topper...",
+            "International Rank 3 in Sanskrit Olympiad...",
+            "Exploring science, mathematics, and innovation...",
+            "Building the future through STEM excellence..."
+        ];
+        
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typingText');
+        
+        function typeText() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+            }
+            
+            const typingSpeed = isDeleting ? 50 : 100;
+            setTimeout(typeText, typingSpeed);
+        }
+        
+        typeText();
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll Animation for sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Particle effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.95) {
+                const particle = document.createElement('div');
+                particle.style.position = 'fixed';
+                particle.style.left = e.clientX + 'px';
+                particle.style.top = e.clientY + 'px';
+                particle.style.width = '2px';
+                particle.style.height = '2px';
+                particle.style.background = 'var(--cyber-blue)';
+                particle.style.borderRadius = '50%';
+                particle.style.pointerEvents = 'none';
+                particle.style.zIndex = '9999';
+                particle.style.boxShadow = '0 0 10px var(--cyber-blue)';
+                document.body.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.style.transition = 'opacity 0.5s, transform 0.5s';
+                    particle.style.opacity = '0';
+                    particle.style.transform = 'translateY(-20px)';
+                    setTimeout(() => particle.remove(), 500);
+                }, 50);
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushman Choudhary | Cyber Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cyber-pink: #ff006e;
+            --cyber-blue: #00f5ff;
+            --cyber-purple: #8b00ff;
+            --cyber-green: #00ff41;
+            --dark-bg: #0a0e27;
+            --darker-bg: #050814;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: var(--darker-bg);
+            color: var(--cyber-blue);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Animated Background */
+        .cyber-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(45deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+        }
+
+        .grid-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 245, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 245, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(50px); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding: 15px 30px;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--cyber-blue);
+            z-index: 10000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--cyber-pink);
+            text-shadow: 0 0 10px var(--cyber-pink);
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-links a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+            position: relative;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            border: 1px solid var(--cyber-blue);
+            box-shadow: 0 0 20px var(--cyber-blue);
+            background: rgba(0, 245, 255, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px 50px;
+            position: relative;
+        }
+
+        .glitch {
+            font-size: 72px;
+            font-weight: bold;
+            color: var(--cyber-pink);
+            text-shadow: 
+                0 0 10px var(--cyber-pink),
+                0 0 20px var(--cyber-pink),
+                0 0 40px var(--cyber-pink);
+            animation: glitch 1s infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+
+        .subtitle {
+            font-size: 28px;
+            color: var(--cyber-blue);
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px var(--cyber-blue);
+        }
+
+        .typing-text {
+            font-size: 20px;
+            color: var(--cyber-green);
+            min-height: 30px;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cyber-btn {
+            padding: 15px 40px;
+            background: transparent;
+            color: var(--cyber-blue);
+            border: 2px solid var(--cyber-blue);
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cyber-btn:hover {
+            color: var(--darker-bg);
+            box-shadow: 0 0 30px var(--cyber-blue);
+        }
+
+        .cyber-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--cyber-blue);
+            transition: left 0.3s;
+            z-index: -1;
+        }
+
+        .cyber-btn:hover::before {
+            left: 0;
+        }
+
+        /* Section Styles */
+        section {
+            min-height: 100vh;
+            padding: 100px 50px;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 48px;
+            color: var(--cyber-pink);
+            text-align: center;
+            margin-bottom: 60px;
+            text-shadow: 0 0 20px var(--cyber-pink);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--cyber-pink), transparent);
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--cyber-blue);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        .profile-card {
+            background: rgba(139, 0, 255, 0.1);
+            border: 2px solid var(--cyber-purple);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(139, 0, 255, 0.3);
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid var(--cyber-pink);
+            margin: 0 auto 20px;
+            box-shadow: 0 0 30px var(--cyber-pink);
+            background: linear-gradient(135deg, var(--cyber-pink), var(--cyber-purple));
+            object-fit: cover;
+            display: block;
+        }
+
+        .info-item {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .info-label {
+            color: var(--cyber-green);
+            font-weight: bold;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background: rgba(0, 245, 255, 0.05);
+            border: 2px solid var(--cyber-blue);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(0, 245, 255, 0.3);
+        }
+
+        .skill-category h3 {
+            color: var(--cyber-pink);
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--cyber-green);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .project-card {
+            background: rgba(255, 0, 110, 0.05);
+            border: 2px solid var(--cyber-pink);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 0, 110, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(255, 0, 110, 0.3);
+        }
+
+        .project-card h3 {
+            color: var(--cyber-blue);
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .project-card p {
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
+            background: rgba(0, 255, 65, 0.1);
+            border: 1px solid var(--cyber-green);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--cyber-green);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-links a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            padding: 8px 20px;
+            border: 1px solid var(--cyber-blue);
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .project-links a:hover {
+            background: var(--cyber-blue);
+            color: var(--darker-bg);
+            box-shadow: 0 0 20px var(--cyber-blue);
+        }
+
+        /* Education Section */
+        .education-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .education-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--cyber-blue), var(--cyber-pink));
+        }
+
+        .education-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .education-content {
+            background: rgba(0, 245, 255, 0.05);
+            border: 2px solid var(--cyber-blue);
+            padding: 30px;
+            border-radius: 10px;
+            margin-left: calc(50% + 30px);
+            transition: all 0.3s;
+        }
+
+        .education-item:nth-child(even) .education-content {
+            margin-left: 0;
+            margin-right: calc(50% + 30px);
+        }
+
+        .education-content:hover {
+            box-shadow: 0 0 30px rgba(0, 245, 255, 0.3);
+        }
+
+        .education-content h3 {
+            color: var(--cyber-pink);
+            margin-bottom: 10px;
+        }
+
+        .education-content .date {
+            color: var(--cyber-green);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .contact-item {
+            background: rgba(139, 0, 255, 0.1);
+            border: 2px solid var(--cyber-purple);
+            padding: 30px;
+            border-radius: 10px;
+            min-width: 200px;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(139, 0, 255, 0.3);
+        }
+
+        .contact-item a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .contact-item a:hover {
+            color: var(--cyber-pink);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: var(--cyber-blue);
+            font-size: 32px;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--cyber-pink);
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 20px var(--cyber-pink));
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(10, 14, 39, 0.8);
+            border-top: 2px solid var(--cyber-blue);
+            color: var(--cyber-blue);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .glitch {
+                font-size: 48px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            section {
+                padding: 80px 20px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .education-timeline::before {
+                left: 0;
+            }
+
+            .education-content {
+                margin-left: 30px !important;
+                margin-right: 0 !important;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-bg"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">&lt;AyushmanChoudhary/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1 class="glitch">AYUSHMAN CHOUDHARY</h1>
+        <p class="subtitle">Student | Olympiad Champion | STEM Enthusiast</p>
+        <div class="typing-text" id="typingText"></div>
+        <div class="cta-buttons">
+            <a href="#projects" class="cyber-btn">View Achievements</a>
+            <a href="#contact" class="cyber-btn">Get In Touch</a>
+            <a href="Ayushman_Choudhary_Resume.pdf" class="cyber-btn" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">&lt;About Me/&gt;</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Ayushman Choudhary, a passionate Class 9 student from Nagpur, Maharashtra, with a deep interest in science, mathematics, and technology. My journey in academics began with curiosity and has evolved into a dedication to achieving excellence across multiple domains.</p>
+                <p>I specialize in competitive learning and have consistently proven my abilities through numerous national and international Olympiads. From securing International Rank 3 in Sanskrit Olympiad to emerging as Vidarbha Topper in VVM, my achievements reflect my commitment to academic excellence.</p>
+                <p>When I'm not studying, you can find me participating in quizzes, exploring programming languages like Python and JavaScript, or working on innovative projects that combine creativity with logic.</p>
+                <p>I'm always eager to learn new concepts, participate in competitions, and contribute to research-oriented learning that pushes the boundaries of knowledge.</p>
+            </div>
+            <div class="profile-card">
+                <img src="profile.jpg" alt="Ayushman Choudhary" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-image" style="display: none; align-items: center; justify-content: center; font-size: 60px; color: var(--cyber-blue);">AC</div>
+                <div class="info-item">
+                    <span class="info-label">School:</span> Bhavan's Bhagwandas Purohit Vidya Mandir
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Class:</span> 9th Grade
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span> Ashti, Nagpur
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Specialization:</span> STEM & Olympiads
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">&lt;Skills/&gt;</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Computational Thinking</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Academic Excellence</h3>
+                <ul class="skill-list">
+                    <li>Mathematics</li>
+                    <li>Science</li>
+                    <li>Sanskrit</li>
+                    <li>Hindi & English</li>
+                    <li>Social Studies</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul class="skill-list">
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                    <li>Communication</li>
+                    <li>Critical Thinking</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Special Abilities</h3>
+                <ul class="skill-list">
+                    <li>Logical Reasoning</li>
+                    <li>Research Skills</li>
+                    <li>Creative Design</li>
+                    <li>Quiz Competitions</li>
+                    <li>Olympiad Excellence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">&lt;Achievements/&gt;</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Class 8 Excellence</h3>
+                <p>Achieved remarkable success across national and international Olympiads. Qualified NMTC Round 2, emerged as VVM Vidarbha Topper, and secured International Rank 3 in Sanskrit Olympiad.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">NMTC Qualifier</span>
+                    <span class="tech-tag">VVM Topper</span>
+                    <span class="tech-tag">Int. Rank 3</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>VNIT Competitions</h3>
+                <p>Won 1st Prize in VNIT Exquizit quiz competition, 2nd Prize in Crepido Bridge Design Challenge, and 3rd Prize in Wallstreet Finance, demonstrating interdisciplinary excellence.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Quiz Champion</span>
+                    <span class="tech-tag">Bridge Design</span>
+                    <span class="tech-tag">Finance</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Olympiad Medalist</h3>
+                <p>Secured International Rank 4 in Informatics Olympiad, multiple Gold Medals in SOF Olympiads, and consistently ranked 1st in Silverzone competitions across Science, Maths, and STEM categories.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">8 Gold Medals</span>
+                    <span class="tech-tag">Zonal Rank 6</span>
+                    <span class="tech-tag">State Topper</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Language Excellence</h3>
+                <p>Achieved International Rank 3 and State Rank 3 in National Sanskrit Olympiad, 1st National Rank in Balbodh Sanskrit, and 1st State Rank in Hindi Olympiad, showcasing linguistic mastery.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Sanskrit</span>
+                    <span class="tech-tag">Hindi</span>
+                    <span class="tech-tag">English</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Science & Math Mastery</h3>
+                <p>Qualified for IMO, NSO, IOEL, IOS, and IOM Round 2. Achieved Zonal Rank 8 in Science Olympiad and demonstrated consistent excellence in mathematical competitions.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Multiple Qualifiers</span>
+                    <span class="tech-tag">Mathematics</span>
+                    <span class="tech-tag">Science</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Special Recognitions</h3>
+                <p>ISRO Quiz participant, CBSE English exam topper, Read N' Grow competition winner, and CENFEST CPS Brochure Making consolation prize recipient for creativity and design.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">ISRO</span>
+                    <span class="tech-tag">Design</span>
+                    <span class="tech-tag">Literature</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">&lt;Education & Achievements/&gt;</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 9 (Currently Studying)</h3>
+                    <p class="date">2024 - Present</p>
+                    <p><strong>Bhavan's Bhagwandas Purohit Vidya Mandir, Ashti</strong></p>
+                    <p>Maintaining academic excellence and actively participating in various competitions and learning opportunities. Continuing the legacy of consistent performance and curiosity-driven learning.</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 8 - Defining Academic Year</h3>
+                    <p class="date">2023 - 2024</p>
+                    <p><strong>Major Achievements:</strong></p>
+                    <p>🏆 <strong>NMTC:</strong> Qualified for Round 2 (Sub-Junior & Junior categories)</p>
+                    <p>🥇 <strong>VVM:</strong> Vidarbha Topper in Vidyarthi Vigyan Manthan</p>
+                    <p>🌏 <strong>Sanskrit Olympiad:</strong> International Rank 3, State Rank 3</p>
+                    <p>🥇 <strong>VNIT Exquizit:</strong> 1st Prize in prestigious quiz</p>
+                    <p>💻 <strong>Informatics Olympiad:</strong> International Rank 4, Zonal Rank 6</p>
+                    <p>🌉 <strong>VNIT Crepido:</strong> 2nd Prize in Bridge Design Challenge</p>
+                    <p>💰 <strong>VNIT Wallstreet:</strong> 3rd Prize in Finance Competition</p>
+                    <p>📊 Qualified for Round 2 in IMO, NSO, IOEL, IOS, and IOM</p>
+                    <p>🏅 Multiple Gold Medals in SOF Olympiads (Maths, Science, SST, Hindi)</p>
+                    <p>🥇 Several 1st Ranks in Silverzone (Science, English, Maths, Hindi, SST, STEM)</p>
+                    <p>🎨 Consolation Prize in CENFEST CPS Brochure Making</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 7 - Beginning of Excellence</h3>
+                    <p class="date">2022 - 2023</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <p>🥉 <strong>VNIT Exquizit:</strong> 3rd Prize</p>
+                    <p>🥉 <strong>Hindi Olympiad:</strong> 3rd State Rank, 1st School Rank (Silverzone)</p>
+                    <p>🥇 <strong>Sanskrit Excellence:</strong> 1st State Rank in Sanskrit Olympiad, 1st National Rank in Balbodh Sanskrit</p>
+                    <p>🏅 Total: 8 Gold, 2 Silver, 1 Bronze across various Olympiads</p>
+                    <p>🥇 1st Prize in Mahatma Gandhi Hindi Olympiad</p>
+                    <p>🚀 Represented school in ISRO Quiz</p>
+                    <p>📚 1st Prize in CBSE English Written Exam</p>
+                    <p>📖 Topped Read N' Grow competition</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 6 & Earlier</h3>
+                    <p class="date">2021 - 2022</p>
+                    <p><strong>Bhavan's Bhagwandas Purohit Vidya Mandir, Ashti</strong></p>
+                    <p>Maintained strong academic performance and participated in school-level competitions. Built the foundation for future excellence through consistent learning and curiosity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">&lt;Contact/&gt;</h2>
+        <div class="contact-container">
+            <p style="font-size: 20px; margin-bottom: 30px;">Let's connect and explore the world of STEM together!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Email</h3>
+                    <a href="mailto:ayushman.choudhary2711@gmail.com">ayushman.choudhary2711@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Phone</h3>
+                    <a href="tel:+919272160098">+91 9272160098</a>
+                </div>
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Location</h3>
+                    <p>Ashti, Nagpur, Maharashtra</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/ayushmanchoudhary" title="GitHub" target="_blank">⚡</a>
+                <a href="https://linkedin.com/in/ayushmanchoudhary" title="LinkedIn" target="_blank">🔗</a>
+                <a href="mailto:ayushman.choudhary2711@gmail.com" title="Email">📧</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ayushman Choudhary. Designed with 💙 and coded in the digital realm.</p>
+        <p style="margin-top: 10px; font-size: 14px;">Olympiad Champion | STEM Excellence | Future Innovator</p>
+    </footer>
+
+    <script>
+        // Typing Animation
+        const phrases = [
+            "NMTC Qualifier | VVM Vidarbha Topper...",
+            "International Rank 3 in Sanskrit Olympiad...",
+            "Exploring science, mathematics, and innovation...",
+            "Building the future through STEM excellence..."
+        ];
+        
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typingText');
+        
+        function typeText() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+            }
+            
+            const typingSpeed = isDeleting ? 50 : 100;
+            setTimeout(typeText, typingSpeed);
+        }
+        
+        typeText();
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll Animation for sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Particle effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.95) {
+                const particle = document.createElement('div');
+                particle.style.position = 'fixed';
+                particle.style.left = e.clientX + 'px';
+                particle.style.top = e.clientY + 'px';
+                particle.style.width = '2px';
+                particle.style.height = '2px';
+                particle.style.background = 'var(--cyber-blue)';
+                particle.style.borderRadius = '50%';
+                particle.style.pointerEvents = 'none';
+                particle.style.zIndex = '9999';
+                particle.style.boxShadow = '0 0 10px var(--cyber-blue)';
+                document.body.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.style.transition = 'opacity 0.5s, transform 0.5s';
+                    particle.style.opacity = '0';
+                    particle.style.transform = 'translateY(-20px)';
+                    setTimeout(() => particle.remove(), 500);
+                }, 50);
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushman Choudhary | Cyber Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cyber-pink: #ff006e;
+            --cyber-blue: #00f5ff;
+            --cyber-purple: #8b00ff;
+            --cyber-green: #00ff41;
+            --dark-bg: #0a0e27;
+            --darker-bg: #050814;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: var(--darker-bg);
+            color: var(--cyber-blue);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Animated Background */
+        .cyber-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(45deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+        }
+
+        .grid-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 245, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 245, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(50px); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding: 15px 30px;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--cyber-blue);
+            z-index: 10000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--cyber-pink);
+            text-shadow: 0 0 10px var(--cyber-pink);
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-links a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+            position: relative;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            border: 1px solid var(--cyber-blue);
+            box-shadow: 0 0 20px var(--cyber-blue);
+            background: rgba(0, 245, 255, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px 50px;
+            position: relative;
+        }
+
+        .glitch {
+            font-size: 72px;
+            font-weight: bold;
+            color: var(--cyber-pink);
+            text-shadow: 
+                0 0 10px var(--cyber-pink),
+                0 0 20px var(--cyber-pink),
+                0 0 40px var(--cyber-pink);
+            animation: glitch 1s infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+
+        .subtitle {
+            font-size: 28px;
+            color: var(--cyber-blue);
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px var(--cyber-blue);
+        }
+
+        .typing-text {
+            font-size: 20px;
+            color: var(--cyber-green);
+            min-height: 30px;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cyber-btn {
+            padding: 15px 40px;
+            background: transparent;
+            color: var(--cyber-blue);
+            border: 2px solid var(--cyber-blue);
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cyber-btn:hover {
+            color: var(--darker-bg);
+            box-shadow: 0 0 30px var(--cyber-blue);
+        }
+
+        .cyber-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--cyber-blue);
+            transition: left 0.3s;
+            z-index: -1;
+        }
+
+        .cyber-btn:hover::before {
+            left: 0;
+        }
+
+        /* Section Styles */
+        section {
+            min-height: 100vh;
+            padding: 100px 50px;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 48px;
+            color: var(--cyber-pink);
+            text-align: center;
+            margin-bottom: 60px;
+            text-shadow: 0 0 20px var(--cyber-pink);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--cyber-pink), transparent);
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--cyber-blue);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        .profile-card {
+            background: rgba(139, 0, 255, 0.1);
+            border: 2px solid var(--cyber-purple);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(139, 0, 255, 0.3);
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid var(--cyber-pink);
+            margin: 0 auto 20px;
+            box-shadow: 0 0 30px var(--cyber-pink);
+            background: linear-gradient(135deg, var(--cyber-pink), var(--cyber-purple));
+            object-fit: cover;
+            display: block;
+        }
+
+        .info-item {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .info-label {
+            color: var(--cyber-green);
+            font-weight: bold;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background: rgba(0, 245, 255, 0.05);
+            border: 2px solid var(--cyber-blue);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(0, 245, 255, 0.3);
+        }
+
+        .skill-category h3 {
+            color: var(--cyber-pink);
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--cyber-green);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .project-card {
+            background: rgba(255, 0, 110, 0.05);
+            border: 2px solid var(--cyber-pink);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 0, 110, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(255, 0, 110, 0.3);
+        }
+
+        .project-card h3 {
+            color: var(--cyber-blue);
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .project-card p {
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
+            background: rgba(0, 255, 65, 0.1);
+            border: 1px solid var(--cyber-green);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--cyber-green);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-links a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            padding: 8px 20px;
+            border: 1px solid var(--cyber-blue);
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .project-links a:hover {
+            background: var(--cyber-blue);
+            color: var(--darker-bg);
+            box-shadow: 0 0 20px var(--cyber-blue);
+        }
+
+        /* Education Section */
+        .education-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .education-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--cyber-blue), var(--cyber-pink));
+        }
+
+        .education-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .education-content {
+            background: rgba(0, 245, 255, 0.05);
+            border: 2px solid var(--cyber-blue);
+            padding: 30px;
+            border-radius: 10px;
+            margin-left: calc(50% + 30px);
+            transition: all 0.3s;
+        }
+
+        .education-item:nth-child(even) .education-content {
+            margin-left: 0;
+            margin-right: calc(50% + 30px);
+        }
+
+        .education-content:hover {
+            box-shadow: 0 0 30px rgba(0, 245, 255, 0.3);
+        }
+
+        .education-content h3 {
+            color: var(--cyber-pink);
+            margin-bottom: 10px;
+        }
+
+        .education-content .date {
+            color: var(--cyber-green);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .contact-item {
+            background: rgba(139, 0, 255, 0.1);
+            border: 2px solid var(--cyber-purple);
+            padding: 30px;
+            border-radius: 10px;
+            min-width: 200px;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(139, 0, 255, 0.3);
+        }
+
+        .contact-item a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .contact-item a:hover {
+            color: var(--cyber-pink);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: var(--cyber-blue);
+            font-size: 32px;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--cyber-pink);
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 20px var(--cyber-pink));
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(10, 14, 39, 0.8);
+            border-top: 2px solid var(--cyber-blue);
+            color: var(--cyber-blue);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .glitch {
+                font-size: 48px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            section {
+                padding: 80px 20px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .education-timeline::before {
+                left: 0;
+            }
+
+            .education-content {
+                margin-left: 30px !important;
+                margin-right: 0 !important;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-bg"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">&lt;AyushmanChoudhary/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1 class="glitch">AYUSHMAN CHOUDHARY</h1>
+        <p class="subtitle">Student | Olympiad Champion | STEM Enthusiast</p>
+        <div class="typing-text" id="typingText"></div>
+        <div class="cta-buttons">
+            <a href="#projects" class="cyber-btn">View Achievements</a>
+            <a href="#contact" class="cyber-btn">Get In Touch</a>
+            <a href="Ayushman_Choudhary_Resume.pdf" class="cyber-btn" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">&lt;About Me/&gt;</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Ayushman Choudhary, a passionate Class 9 student from Nagpur, Maharashtra, with a deep interest in science, mathematics, and technology. My journey in academics began with curiosity and has evolved into a dedication to achieving excellence across multiple domains.</p>
+                <p>I specialize in competitive learning and have consistently proven my abilities through numerous national and international Olympiads. From securing International Rank 3 in Sanskrit Olympiad to emerging as Vidarbha Topper in VVM, my achievements reflect my commitment to academic excellence.</p>
+                <p>When I'm not studying, you can find me participating in quizzes, exploring programming languages like Python and JavaScript, or working on innovative projects that combine creativity with logic.</p>
+                <p>I'm always eager to learn new concepts, participate in competitions, and contribute to research-oriented learning that pushes the boundaries of knowledge.</p>
+            </div>
+            <div class="profile-card">
+                <img src="profile.jpg" alt="Ayushman Choudhary" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-image" style="display: none; align-items: center; justify-content: center; font-size: 60px; color: var(--cyber-blue);">AC</div>
+                <div class="info-item">
+                    <span class="info-label">School:</span> Bhavan's Bhagwandas Purohit Vidya Mandir
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Class:</span> 9th Grade
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span> Ashti, Nagpur
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Specialization:</span> STEM & Olympiads
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">&lt;Skills/&gt;</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Computational Thinking</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Academic Excellence</h3>
+                <ul class="skill-list">
+                    <li>Mathematics</li>
+                    <li>Science</li>
+                    <li>Sanskrit</li>
+                    <li>Hindi & English</li>
+                    <li>Social Studies</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul class="skill-list">
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                    <li>Communication</li>
+                    <li>Critical Thinking</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Special Abilities</h3>
+                <ul class="skill-list">
+                    <li>Logical Reasoning</li>
+                    <li>Research Skills</li>
+                    <li>Creative Design</li>
+                    <li>Quiz Competitions</li>
+                    <li>Olympiad Excellence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">&lt;Achievements/&gt;</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Class 8 Excellence</h3>
+                <p>Achieved remarkable success across national and international Olympiads. Qualified NMTC Round 2, emerged as VVM Vidarbha Topper, and secured International Rank 3 in Sanskrit Olympiad.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">NMTC Qualifier</span>
+                    <span class="tech-tag">VVM Topper</span>
+                    <span class="tech-tag">Int. Rank 3</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>VNIT Competitions</h3>
+                <p>Won 1st Prize in VNIT Exquizit quiz competition, 2nd Prize in Crepido Bridge Design Challenge, and 3rd Prize in Wallstreet Finance, demonstrating interdisciplinary excellence.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Quiz Champion</span>
+                    <span class="tech-tag">Bridge Design</span>
+                    <span class="tech-tag">Finance</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Olympiad Medalist</h3>
+                <p>Secured International Rank 4 in Informatics Olympiad, multiple Gold Medals in SOF Olympiads, and consistently ranked 1st in Silverzone competitions across Science, Maths, and STEM categories.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">8 Gold Medals</span>
+                    <span class="tech-tag">Zonal Rank 6</span>
+                    <span class="tech-tag">State Topper</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Language Excellence</h3>
+                <p>Achieved International Rank 3 and State Rank 3 in National Sanskrit Olympiad, 1st National Rank in Balbodh Sanskrit, and 1st State Rank in Hindi Olympiad, showcasing linguistic mastery.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Sanskrit</span>
+                    <span class="tech-tag">Hindi</span>
+                    <span class="tech-tag">English</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Science & Math Mastery</h3>
+                <p>Qualified for IMO, NSO, IOEL, IOS, and IOM Round 2. Achieved Zonal Rank 8 in Science Olympiad and demonstrated consistent excellence in mathematical competitions.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Multiple Qualifiers</span>
+                    <span class="tech-tag">Mathematics</span>
+                    <span class="tech-tag">Science</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Special Recognitions</h3>
+                <p>ISRO Quiz participant, CBSE English exam topper, Read N' Grow competition winner, and CENFEST CPS Brochure Making consolation prize recipient for creativity and design.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">ISRO</span>
+                    <span class="tech-tag">Design</span>
+                    <span class="tech-tag">Literature</span>
+                </div>
+                <div class="project-links">
+                    <a href="#education">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">&lt;Education & Achievements/&gt;</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 9 (Currently Studying)</h3>
+                    <p class="date">2024 - Present</p>
+                    <p><strong>Bhavan's Bhagwandas Purohit Vidya Mandir, Ashti</strong></p>
+                    <p>Maintaining academic excellence and actively participating in various competitions and learning opportunities. Continuing the legacy of consistent performance and curiosity-driven learning.</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 8 - Defining Academic Year</h3>
+                    <p class="date">2023 - 2024</p>
+                    <p><strong>Major Achievements:</strong></p>
+                    <p>🏆 <strong>NMTC:</strong> Qualified for Round 2 (Sub-Junior & Junior categories)</p>
+                    <p>🥇 <strong>VVM:</strong> Vidarbha Topper in Vidyarthi Vigyan Manthan</p>
+                    <p>🌏 <strong>Sanskrit Olympiad:</strong> International Rank 3, State Rank 3</p>
+                    <p>🥇 <strong>VNIT Exquizit:</strong> 1st Prize in prestigious quiz</p>
+                    <p>💻 <strong>Informatics Olympiad:</strong> International Rank 4, Zonal Rank 6</p>
+                    <p>🌉 <strong>VNIT Crepido:</strong> 2nd Prize in Bridge Design Challenge</p>
+                    <p>💰 <strong>VNIT Wallstreet:</strong> 3rd Prize in Finance Competition</p>
+                    <p>📊 Qualified for Round 2 in IMO, NSO, IOEL, IOS, and IOM</p>
+                    <p>🏅 Multiple Gold Medals in SOF Olympiads (Maths, Science, SST, Hindi)</p>
+                    <p>🥇 Several 1st Ranks in Silverzone (Science, English, Maths, Hindi, SST, STEM)</p>
+                    <p>🎨 Consolation Prize in CENFEST CPS Brochure Making</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 7 - Beginning of Excellence</h3>
+                    <p class="date">2022 - 2023</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <p>🥉 <strong>VNIT Exquizit:</strong> 3rd Prize</p>
+                    <p>🥉 <strong>Hindi Olympiad:</strong> 3rd State Rank, 1st School Rank (Silverzone)</p>
+                    <p>🥇 <strong>Sanskrit Excellence:</strong> 1st State Rank in Sanskrit Olympiad, 1st National Rank in Balbodh Sanskrit</p>
+                    <p>🏅 Total: 8 Gold, 2 Silver, 1 Bronze across various Olympiads</p>
+                    <p>🥇 1st Prize in Mahatma Gandhi Hindi Olympiad</p>
+                    <p>🚀 Represented school in ISRO Quiz</p>
+                    <p>📚 1st Prize in CBSE English Written Exam</p>
+                    <p>📖 Topped Read N' Grow competition</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Class 6 & Earlier</h3>
+                    <p class="date">2021 - 2022</p>
+                    <p><strong>Bhavan's Bhagwandas Purohit Vidya Mandir, Ashti</strong></p>
+                    <p>Maintained strong academic performance and participated in school-level competitions. Built the foundation for future excellence through consistent learning and curiosity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">&lt;Contact/&gt;</h2>
+        <div class="contact-container">
+            <p style="font-size: 20px; margin-bottom: 30px;">Let's connect and explore the world of STEM together!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Email</h3>
+                    <a href="mailto:ayushman.choudhary2711@gmail.com">ayushman.choudhary2711@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Phone</h3>
+                    <a href="tel:+919272160098">+91 9272160098</a>
+                </div>
+                <div class="contact-item">
+                    <h3 style="color: var(--cyber-pink); margin-bottom: 15px;">Location</h3>
+                    <p>Ashti, Nagpur, Maharashtra</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/ayushmanchoudhary" title="GitHub" target="_blank">⚡</a>
+                <a href="https://linkedin.com/in/ayushmanchoudhary" title="LinkedIn" target="_blank">🔗</a>
+                <a href="mailto:ayushman.choudhary2711@gmail.com" title="Email">📧</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ayushman Choudhary. Designed with 💙 and coded in the digital realm.</p>
+        <p style="margin-top: 10px; font-size: 14px;">Olympiad Champion | STEM Excellence | Future Innovator</p>
+    </footer>
+
+    <script>
+        // Typing Animation
+        const phrases = [
+            "NMTC Qualifier | VVM Vidarbha Topper...",
+            "International Rank 3 in Sanskrit Olympiad...",
+            "Exploring science, mathematics, and innovation...",
+            "Building the future through STEM excellence..."
+        ];
+        
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typingText');
+        
+        function typeText() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+            }
+            
+            const typingSpeed = isDeleting ? 50 : 100;
+            setTimeout(typeText, typingSpeed);
+        }
+        
+        typeText();
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll Animation for sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Particle effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.95) {
+                const particle = document.createElement('div');
+                particle.style.position = 'fixed';
+                particle.style.left = e.clientX + 'px';
+                particle.style.top = e.clientY + 'px';
+                particle.style.width = '2px';
+                particle.style.height = '2px';
+                particle.style.background = 'var(--cyber-blue)';
+                particle.style.borderRadius = '50%';
+                particle.style.pointerEvents = 'none';
+                particle.style.zIndex = '9999';
+                particle.style.boxShadow = '0 0 10px var(--cyber-blue)';
+                document.body.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.style.transition = 'opacity 0.5s, transform 0.5s';
+                    particle.style.opacity = '0';
+                    particle.style.transform = 'translateY(-20px)';
+                    setTimeout(() => particle.remove(), 500);
+                }, 50);
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushman Choudhary | Cyber Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cyber-pink: #ff006e;
+            --cyber-blue: #00f5ff;
+            --cyber-purple: #8b00ff;
+            --cyber-green: #00ff41;
+            --dark-bg: #0a0e27;
+            --darker-bg: #050814;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: var(--darker-bg);
+            color: var(--cyber-blue);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Animated Background */
+        .cyber-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(45deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+        }
+
+        .grid-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 245, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 245, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(50px); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding: 15px 30px;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--cyber-blue);
+            z-index: 10000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--cyber-pink);
+            text-shadow: 0 0 10px var(--cyber-pink);
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-links a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+            position: relative;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            border: 1px solid var(--cyber-blue);
+            box-shadow: 0 0 20px var(--cyber-blue);
+            background: rgba(0, 245, 255, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px 50px;
+            position: relative;
+        }
+
+        .glitch {
+            font-size: 72px;
+            font-weight: bold;
+            color: var(--cyber-pink);
+            text-shadow: 
+                0 0 10px var(--cyber-pink),
+                0 0 20px var(--cyber-pink),
+                0 0 40px var(--cyber-pink);
+            animation: glitch 1s infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+
+        .subtitle {
+            font-size: 28px;
+            color: var(--cyber-blue);
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px var(--cyber-blue);
+        }
+
+        .typing-text {
+            font-size: 20px;
+            color: var(--cyber-green);
+            min-height: 30px;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cyber-btn {
+            padding: 15px 40px;
+            background: transparent;
+            color: var(--cyber-blue);
+            border: 2px solid var(--cyber-blue);
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cyber-btn:hover {
+            color: var(--darker-bg);
+            box-shadow: 0 0 30px var(--cyber-blue);
+        }
+
+        .cyber-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--cyber-blue);
+            transition: left 0.3s;
+            z-index: -1;
+        }
+
+        .cyber-btn:hover::before {
+            left: 0;
+        }
+
+        /* Section Styles */
+        section {
+            min-height: 100vh;
+            padding: 100px 50px;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 48px;
+            color: var(--cyber-pink);
+            text-align: center;
+            margin-bottom: 60px;
+            text-shadow: 0 0 20px var(--cyber-pink);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--cyber-pink), transparent);
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--cyber-blue);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        .profile-card {
+            background: rgba(139, 0, 255, 0.1);
+            border: 2px solid var(--cyber-purple);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(139, 0, 255, 0.3);
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid var(--cyber-pink);
+            margin: 0 auto 20px;
+            box-shadow: 0 0 30px var(--cyber-pink);
+            background: linear-gradient(135deg, var(--cyber-pink), var(--cyber-purple));
+            object-fit: cover;
+            display: block;
+        }
+
+        .info-item {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .info-label {
+            color: var(--cyber-green);
+            font-weight: bold;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background: rgba(0, 245, 255, 0.05);
+            border: 2px solid var(--cyber-blue);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(0, 245, 255, 0.3);
+        }
+
+        .skill-category h3 {
+            color: var(--cyber-pink);
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--cyber-green);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .project-card {
+            background: rgba(255, 0, 110, 0.05);
+            border: 2px solid var(--cyber-pink);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 0, 110, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(255, 0, 110, 0.3);
+        }
+
+        .project-card h3 {
+            color: var(--cyber-blue);
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .project-card p {
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
+            background: rgba(0, 255, 65, 0.1);
+            border: 1px solid var(--cyber-green);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--cyber-green);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-links a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            padding: 8px 20px;
+            border: 1px solid var(--cyber-blue);
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .project-links a:hover {
+            background: var(--cyber-blue);
+            color: var(--darker-bg);
+            box-shadow: 0 0 20px var(--cyber-blue);
+        }
+
+        /* Education Section */
+        .education-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .education-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--cyber-blue), var(--cyber-pink));
+        }
+
+        .education-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .education-content {
+            background: rgba(0, 245, 255, 0.05);
+            border: 2px solid var(--cyber-blue);
+            padding: 30px;
+            border-radius: 10px;
+            margin-left: calc(50% + 30px);
+            transition: all 0.3s;
+        }
+
+        .education-item:nth-child(even) .education-content {
+            margin-left: 0;
+            margin-right: calc(50% + 30px);
+        }
+
+        .education-content:hover {
+            box-shadow: 0 0 30px rgba(0, 245, 255, 0.3);
+        }
+
+        .education-content h3 {
+            color: var(--cyber-pink);
+            margin-bottom: 10px;
+        }
+
+        .education-content .date {
+            color: var(--cyber-green);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .contact-item {
+            background: rgba(139, 0, 255, 0.1);
+            border: 2px solid var(--cyber-purple);
+            padding: 30px;
+            border-radius: 10px;
+            min-width: 200px;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(139, 0, 255, 0.3);
+        }
+
+        .contact-item a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .contact-item a:hover {
+            color: var(--cyber-pink);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: var(--cyber-blue);
+            font-size: 32px;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--cyber-pink);
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 20px var(--cyber-pink));
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(10, 14, 39, 0.8);
+            border-top: 2px solid var(--cyber-blue);
+            color: var(--cyber-blue);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .glitch {
+                font-size: 48px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            section {
+                padding: 80px 20px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .education-timeline::before {
+                left: 0;
+            }
+
+            .education-content {
+                margin-left: 30px !important;
+                margin-right: 0 !important;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-bg"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">&lt;AyushmanChoudhary/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1 class="glitch">AYUSHMAN CHOUDHARY</h1>
+        <p class="subtitle">Student | Olympiad Champion | STEM Enthusiast</p>
+        <div class="typing-text" id="typingText"></div>
+        <div class="cta-buttons">
+            <a href="#projects" class="cyber-btn">View Achievements</a>
+            <a href="#contact" class="cyber-btn">Get In Touch</a>
+            <a href="Ayushman_Choudhary_Resume.pdf" class="cyber-btn" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">&lt;About Me/&gt;</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Ayushman Choudhary, a passionate Class 9 student from Nagpur, Maharashtra, with a deep interest in science, mathematics, and technology. My journey in academics began with curiosity and has evolved into a dedication to achieving excellence across multiple domains.</p>
+                <p>I specialize in competitive learning and have consistently proven my abilities through numerous national and international Olympiads. From securing International Rank 3 in Sanskrit Olympiad to emerging as Vidarbha Topper in VVM, my achievements reflect my commitment to academic excellence.</p>
+                <p>When I'm not studying, you can find me participating in quizzes, exploring programming languages like Python and JavaScript, or working on innovative projects that combine creativity with logic.</p>
+                <p>I'm always eager to learn new concepts, participate in competitions, and contribute to research-oriented learning that pushes the boundaries of knowledge.</p>
+            </div>
+            <div class="profile-card">
+                <img src="profile.jpg" alt="Ayushman Choudhary" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-image" style="display: none; align-items: center; justify-content: center; font-size: 60px; color: var(--cyber-blue);">AC</div>
                 <div class="info-item">
                     <span class="info-label">School:</span> Bhavan's Bhagwandas Purohit Vidya Mandir
                 </div>
